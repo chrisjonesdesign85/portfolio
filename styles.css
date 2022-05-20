@@ -194,7 +194,7 @@ nav {
 }
 .section p {
   color: white;
-  width: 65%;
+  width: 75%;
   margin: auto;
   
 }
@@ -423,6 +423,10 @@ footer p {
 
 .hidden {
     display: none;
+}
+
+.captcha {
+  width: 65%
 }
 
 .responsive { 
