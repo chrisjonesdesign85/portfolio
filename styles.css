@@ -429,7 +429,7 @@ footer p {
   margin: auto;
   width: 75%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
