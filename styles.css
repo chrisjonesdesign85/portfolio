@@ -427,7 +427,8 @@ footer p {
 
 .captcha {
   margin: 0;
-  width: 65%
+  width: 65%;
+  display: flex;
 }
 
 .responsive { 
