@@ -47,16 +47,22 @@ let sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-    console.log("sticky nav!")
   } 
   
-  // if (window.scroll(0,0) {
-  //     navbar.classList.remove("sticky")
-  //     })
+//   if (window.scroll(0,0)) {
+//       navbar.classList.remove("sticky")
+//       }
 
   
-  // else {
-  //   navbar.classList.remove("sticky");
-  //   console.log("!sticky nav")
-  // }
+  else {
+    navbar.classList.remove("sticky");
+    console.log("!sticky nav")
+  }
+}
+
+function toggleNav() {
+    let x = document.getElementById('nav');
+    let y = document.getElementById('soc')
+    x.classList.toggle('responsive')
+    y.classList.toggle('resonsive')
 }

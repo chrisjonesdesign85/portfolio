@@ -81,10 +81,13 @@ img {
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
+
 
 nav {
   margin: 20px;
+  
 }
 
 .active {
@@ -102,6 +105,10 @@ nav {
   border-top: 1px solid red;
   
 }
+
+.icon {
+    display: none;
+  }
 
 .heroContent {
   /* width: 43%; */
@@ -215,6 +222,29 @@ nav {
   display: flex;
   justify-content: space-evenly;
 
+}
+
+/* ABOUT */
+.about {
+    margin: 0;
+    padding: 0;
+}
+.about img {
+    width: 30vw;
+    /* border-radius: 50%; */
+    /* border: 10px solid white; */
+}
+
+.about-box {
+    background: rgba(255, 0, 0, 0.219);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p {
+    font-size: 1.7vw;
 }
 
 .project-container {
@@ -391,19 +421,51 @@ footer p {
     margin: 0;
 }
 
+.responsive { 
+    display: block;
+    padding: 0;
+    margin: 0;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  } */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media screen and (max-width: 600px) {
+    nav { display: none;} 
+    .social { display: none; }
+    
+    a.icon {
+        display: block;
+        color: red;
+        padding: 0;
+    }
+
+    #nav-container.sticky {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+
+  @media screen and (max-width: 600px) {
+    #nav {position: relative;}
+    #nav {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+  }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
