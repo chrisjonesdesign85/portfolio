@@ -271,7 +271,6 @@ nav {
 /* box to contain the image that zoom in on the projects*/
 
 .img-box {
-    border-radius:50;
     border: 1px solid red;
     overflow: hidden;
 }
@@ -491,6 +490,14 @@ footer p {
 
     .captcha {
       width: 100%;
+    }
+
+    .project-container {
+      /* width: 100%;  */
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
     }
 }
 
