@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+/* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+
+body {
+  background: url("https://images.unsplash.com/photo-1536960875817-4c2797711c12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") repeat-x;
+  background-size: cover;
+  /** scrolling clouds bg **/
+  animation: moveIt 100s linear infinite;
+ 
+}
+
+@keyframes moveIt {
+  from {background-position: bottom left;}
+  to {background-position: top right;}
+}
+
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vw;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  font-size: 16px;
+  font-family: 'B612 Mono', monospace;
+  padding-right: 50px;
+  transition: all .7s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+  /* // text-decoration: overline red; */
+}
+
+
+img {
+  width: 100%;
+    height: auto;
+    object-fit: cover
+}
+
+.container {
+  width: 85%;
+  margin:  auto;
+  /* // border-top: 1px solid red; */
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+}
+
+.social {
+  color: red;
+  margin: 20px;
+}
+
+.social i:hover {
+  color: white;
+}
+
+.social i {
+  padding-right: 30px;
+  transition: all .4s ease;
+}
+
+#nav-container {
+  margin: 0 auto;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  margin: 20px;
+}
+
+.active {
+  color: white;
+  text-decoration: overline red;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+  
+  /* // filter: drop-shadow(0 -2mm 2mm rgb(0, 0, 0)); */
+  border-top: 1px solid red;
+  
+}
+
+.heroContent {
+  /* width: 43%; */
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+
+}
+
+.hero h1 {
+  color:red; 
+  font-family: 'Bebas Neue', cursive;
+  /* border: 1px solid red; */
+  color: rgba(255, 255, 255);
+  /* padding: ; */
+  font-size: 14vw;
+  margin: 0;
+  animation: fadeIn 6s;
+  opacity: 1;
+}
+
+#tagline {
+    
+    animation: fadeIn 6s;
+}
+
+.time {
+  font-family: 'B612 Mono', monospace;
+  font-size: 1vw;
+  align-self: flex-end;
+  position: absolute;
+  top: 240px;
+  animation-delay: 20s;
+  animation: fadeIn 13s;
+  opacity: 1;
+}
+
+#slash {
+    color: red;
+    animation: fadeIn 12s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+    
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
+.hero p {
+  color: grey;
+  font-size: 1.5vw;
+  font-family: 'B612 Mono', monospace;
+}
+
+
+.section {
+  /* text-align: center; */
+  padding: 30px;
+  color: red;
+}
+
+.section h1 {
+    text-align: center;
+}
+.section p {
+  color: white;
+  width: 65%;
+  margin: auto;
+  
+}
+.work { 
+  margin: auto;
+}
+
+.work h1 {
+  margin: 50px 0;
+}
+.work p { 
+    margin: 60px auto;
+    text-align: center;
+}
+
+.work a {
+    padding: 0 4vw;
+}
+
+.workNav {
+  background: black;
+  width: 60vw;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.project-container {
+  /* width: 100%;  */
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project {
+  display: flex; 
+  flex-direction: column; 
+  margin: 15px;
+}
+
+/* box to contain the image that zoom in on the projects*/
+
+.img-box {
+    border-radius:50;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+
+.project img {
+  /* width: 15vw; */
+  /* height: 15vw; */
+  /* border-radius: 50%; */
+  filter: grayscale(100%);
+  transition: grayscale(100%) 5s ease;
+
+  transition: all 3s ease;
+
+  
+ 
+  /* // position: relative;
+  // z-index: 1;
+  // top:-67px; */
+}
+
+.project img:hover {
+  filter: none;
+  transform: translateX(10px) rotate(9deg) translateY(5px) scale(1.2);
+  
+}
+
+.project {
+    text-align: center;
+}
+
+/* .zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform:scale(1.1);
+} */
+
+.projTitle {
+   /* text-align: left;
+   padding-bottom: 10px;
+   margin: 0; */
+}
+
+
+.projImg {
+   /* padding: 20px;
+   width: 50%;
+   display: flex; */
+}
+
+.projInfo {
+  
+}
+
+.project h2 {
+ /* position: relative;
+ top: 60px;
+ position: relative;
+ z-index: 2; */
+}
+
+.projLinks {
+  margin-top: 10px;
+}
+
+.projLinks a {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+}
+
+/* .container {
+    text-align: left;
+} */
+
+.contact p {  
+    padding-bottom: 50px;
+} 
+
+form {
+    margin-bottom: 100px;
+}
+
+input  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    font-size: 2vw;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    /* border-radius: 1vw; */
+    border-bottom: 1px solid red;
+    margin-top: 20px;
+}
+
+label {
+    color: red;
+    font-family: 'B612 Mono', monospace;
+    font-size: 3vw;
+    text-align: center;   
+}
+
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 2vw;
+    background-color: rgba(0, 0, 0, 0.466);
+     color: white;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 1px solid red;
+    outline: none;
+    resize: none;
+}
+
+#contactBtn {
+    background-color: transparent;
+    border: 1px solid red;
+
+    /* border: none; */
+    color: red;
+    padding: 10px 4vw;
+    text-decoration: none;
+    margin: 10px 10px;
+    cursor: pointer;
+    float: right;
+
+    transition: all .6s ease;
+  }
+
+  #contactBtn:hover {
+      color: black;
+      background: red;
+  }
+
+footer {
+    color: red;
+    background: black;
+    width: 65%;
+    margin: auto;
+    padding: 10px;
+    font-family: 'B612 Mono', monospace;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  } */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/* Media Queries  */
+
+/* @media (max-width:1600px) {
+  .container {
+    width:1200px;
+  
+  }
+
+  #nav-container {
+    max-width: 1000px;
+  }
+
+  .project-container {
+    /* background: red; */
+    /* width: 35%; */
+  /* }
+}
+
+@media (max-width:900px) {
+  .container {
+    max-width:900px;
+  
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}  */
