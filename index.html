@@ -29,7 +29,6 @@
         </div><!-- end nav container -->
         <section class="hero">
           <div class="heroContent">
-              <h2>HELLO WORLD</h2>
             <!-- <p class="time"><span class="hrs"></span><span class="mns"></span><span class="scs"></span></p> -->
             <h1>CHRISJONES<span id="slash">/</span>DEV</h1>
           <p id="tagline">- Full-Stack Web Developer -</p>
@@ -132,7 +131,7 @@
             <h1>CONTACT</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum esse vel quas voluptate iste cupiditate quis optio exercitationem consequatur quisquam! Vero quia doloremque placeat odit ea amet, numquam quam distinctio.      </p>
         
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
                 <p class="hidden">
                     <label>
                       Don’t fill this out if you’re human: <input name="bot-field" />
@@ -156,7 +155,7 @@
                     </label>
                 </p>
                 <!-- recaptcha -->
-                <!-- <div data-netlify-recaptcha="true"></div> -->
+                <div data-netlify-recaptcha="true"></div>
 
                 <p>
                   <button id="contactBtn" type="submit">Send</button>
