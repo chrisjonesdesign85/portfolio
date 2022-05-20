@@ -64,5 +64,5 @@ function toggleNav() {
     let x = document.getElementById('nav');
     let y = document.getElementById('soc')
     x.classList.toggle('responsive')
-    y.classList.toggle('resonsive')
+    y.classList.toggle('responsive')
 }

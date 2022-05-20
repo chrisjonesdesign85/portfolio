@@ -116,7 +116,7 @@
                     <p>Location: UNKNOWN</p>
 
                     <p>I am a self taught developer.</p>
-                    <p>I learned how to code through hard work and dedication. I maed the decision
+                    <p>I learned how to code through hard work and dedication. I made the decision
                         to teach myself to code when I decided I wanted a better future for myself.
                         Through a lot of persistence and discipline I taught myself the skills necisary 
                         for web development through the use of paid online course on Udemy and Scrimba.
@@ -131,7 +131,12 @@
             <h1>CONTACT</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum esse vel quas voluptate iste cupiditate quis optio exercitationem consequatur quisquam! Vero quia doloremque placeat odit ea amet, numquam quam distinctio.      </p>
         
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <p class="hidden">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </p>
                 <p>
                     <label for="name">Name:
                         <input type="text" id="name" name="name"/>
@@ -149,6 +154,9 @@
                         Message: <textarea name="message" placeholder="Share your thoughts."></textarea>
                     </label>
                 </p>
+                <!-- recaptcha -->
+                <!-- <div data-netlify-recaptcha="true"></div> -->
+
                 <p>
                   <button id="contactBtn" type="submit">Send</button>
                 </p>
