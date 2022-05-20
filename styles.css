@@ -26,6 +26,9 @@ body {
   to {background-position: top right;}
 }
 
+p {
+  font-family: 'B612 Mono', monospace;
+}
 
 h1 {
     font-family: 'Bebas Neue', cursive;
@@ -51,7 +54,8 @@ a:hover {
 img {
   width: 100%;
     height: auto;
-    object-fit: cover
+    object-fit: cover;
+    
 }
 
 .container {
@@ -111,8 +115,6 @@ nav {
   }
 
 .heroContent {
-  /* width: 43%; */
-  /* margin: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,7 +139,6 @@ nav {
   font-family: 'Bebas Neue', cursive;
   /* border: 1px solid red; */
   color: rgba(255, 255, 255);
-  /* padding: ; */
   font-size: 14vw;
   margin: 0;
   animation: fadeIn 6s;
@@ -145,7 +146,7 @@ nav {
 }
 
 #tagline {
-    
+    font-size: 2vw;
     animation: fadeIn 6s;
 }
 
@@ -184,7 +185,6 @@ nav {
 
 
 .section {
-  /* text-align: center; */
   padding: 30px;
   color: red;
 }
@@ -236,7 +236,7 @@ nav {
 }
 
 .about-box {
-    background: rgba(255, 0, 0, 0.219);
+    
     padding: 50px;
     display: flex;
     align-items: center;
@@ -244,8 +244,15 @@ nav {
 }
 
 .about p {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
 }
+
+.aboutMeImg img {
+  border-radius: 50%;
+  border: 6px solid red;
+}
+
+
 
 .project-container {
   /* width: 100%;  */
@@ -258,6 +265,7 @@ nav {
   display: flex; 
   flex-direction: column; 
   margin: 15px;
+  align-items: center;
 }
 
 /* box to contain the image that zoom in on the projects*/
@@ -268,6 +276,11 @@ nav {
     overflow: hidden;
 }
 
+.project p {
+  padding: 0;
+  margin: 10px;
+  text-align: center;
+}
 
 .project img {
   /* width: 15vw; */
