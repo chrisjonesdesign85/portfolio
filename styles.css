@@ -183,6 +183,9 @@ nav {
   font-family: 'B612 Mono', monospace;
 }
 
+#skills {
+  color: red;
+}
 
 .section {
   padding: 30px;
